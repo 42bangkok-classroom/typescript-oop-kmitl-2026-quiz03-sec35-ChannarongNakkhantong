@@ -2,7 +2,7 @@ export class Person {
     static COUNTRY:string = 'thailand';
     firstname?:string;
     lastname?:string;
-    private age?:number;
+    private age?:number = 0;
     setAge(age:number){
         this.age = age;
     }
