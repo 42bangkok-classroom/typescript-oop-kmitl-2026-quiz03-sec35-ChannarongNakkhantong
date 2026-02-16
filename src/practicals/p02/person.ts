@@ -1,5 +1,5 @@
 export class Person {
-    static COUNTRY = 'thailand';
+    static COUNTRY:string = 'thailand';
     firstname?:string;
     lastname?:string;
     private age?:number;
