@@ -1,14 +1,10 @@
 export class Person {
-    static COUNTRY = 'thailand';
+    static COUNTRY = 1;
     firstname?:string;
     lastname?:string;
     private age?:number;
-    constructor(firstname?:string,lastname?:string){
-        this.firstname = firstname;
-        this.lastname = lastname;
-    }
     setAge(age:number){
-        return this.age = age;
+        this.age = age;
     }
     getAge(){
         return this.age;
