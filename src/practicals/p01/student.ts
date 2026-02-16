@@ -6,7 +6,7 @@ export class Student {
         this.lastname = lastname;
     }
     printName(){
-        console.log(this.firstname,this.lastname);
+        console.log(`${this.firstname} ${this.lastname}`);
     }
 }
 const student = new Student()
