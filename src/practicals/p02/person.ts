@@ -1,31 +1,25 @@
 export class Person {
-    static COUNTRY:string = 'thailand';
-    firstname?:string;
-    lastname?:string;
-    private age?:number = 0;
-    setAge(age:number){
+    firstname: string;
+    lastname: string;
+    private age: number;
+    static COUNTRY: string = "Thailand";
+
+    constructor(firstname: string = "", lastname: string = "", age: number = 0) {
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.age = age;
     }
-    getAge(){
+
+    setAge(age: number) {
+        this.age = age;
+    }
+
+    getAge() {
         return this.age;
     }
-    getFullName(){
+
+    getFullName() {
         return `${this.firstname} ${this.lastname}`;
     }
 }
-const person = new Person()
-
-person.firstname = 'John'
-person.lastname = 'Doe'
-person.setAge(25)
-
-console.log(person.getFullName())
-// John Doe
-
-console.log(person.getAge())
-// 25
-
-console.log(Person.COUNTRY)
-// Thailand   (หรือค่าคงที่ที่กำหนดเอง)
-
 
