@@ -11,11 +11,8 @@ export class User {
         return this.validatePassword(password);
     }
     private validatePassword(password: string) : boolean {
-        if(this.password === password){
-            return true;
-        }else{
-            return false;
-        }
+        return this.password === password;
+   
     }
     getLoginAttempts() : number {
         return User.LOGIN_ATTEMPTS;
