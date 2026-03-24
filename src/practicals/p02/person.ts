@@ -10,16 +10,17 @@ export class Person {
         this.age = age;
     }
 
-    setAge(age: number) {
+    setAge(age: number): void {
         this.age = age;
     }
 
-    getAge() {
+    getAge(): number {
         return this.age;
     }
 
-    getFullName() {
+    getFullName(): string {
         return `${this.firstname} ${this.lastname}`;
     }
 }
+
 
