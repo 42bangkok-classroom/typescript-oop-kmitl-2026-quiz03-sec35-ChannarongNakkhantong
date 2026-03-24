@@ -11,7 +11,7 @@ export class Playstation extends Product {
   }
   getDiscountPrice() {
     //หาส่วนลดก่อน
-    this.price = this.price - (Product.DISCOUNT_PERCENT / 100 * this.price);
+    return this.price - (Product.DISCOUNT_PERCENT / 100 * this.price);
   }
   // TODO: implement class properties, constructor with super(...), and methods
 }
