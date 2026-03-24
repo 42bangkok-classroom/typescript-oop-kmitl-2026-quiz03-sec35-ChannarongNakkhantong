@@ -1,13 +1,13 @@
 export class User {
     username: string;
     private password: string;
-    private static LOGIN_ATTEMPTS : number = 0;
+    private LOGIN_ATTEMPTS : number = 0;
     constructor(username: string, password: string){
         this.username = username;
         this.password = password;
     }
     login(password: string) : boolean {
-        User.LOGIN_ATTEMPTS += 1 ;
+        this.LOGIN_ATTEMPTS += 1 ;
         return this.validatePassword(password);
     }
     private validatePassword(password: string) : boolean {
@@ -15,6 +15,6 @@ export class User {
    
     }
     getLoginAttempts() : number {
-        return User.LOGIN_ATTEMPTS;
+        return this.LOGIN_ATTEMPTS;
     }
 }
